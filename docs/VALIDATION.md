@@ -7,3 +7,5 @@
 - 本包仅 M0 工程骨架，未输出可安装 JAR。
 
 下一步先在 JDK 21 和可下载依赖的环境执行 gradlew.bat build，然后 runClient 与 runServer。之后实现 M1，不应先开发 AI。
+
+补充：新增 SurveySelection（按序选点、XZ重复拒绝、维度隔离、256点上限、撤销/取消、非破坏性闭合预览）及核心检查。游戏中的测绘笔尚未连接此逻辑。等待 GitHub CI 或本地 JDK 21 执行检查。
