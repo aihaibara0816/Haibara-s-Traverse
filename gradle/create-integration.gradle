@@ -1,0 +1,14 @@
+// Opt in with -Pwith_create=true. No Create classes may enter core/api packages.
+if (providers.gradleProperty('with_create').get().toBoolean()) {
+    repositories {
+        maven { url = 'https://maven.createmod.net' }
+        maven { url = 'https://maven.ithundxr.dev/snapshots' }
+    }
+    dependencies {
+        implementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
+        implementation("net.createmod.ponder:ponder-neoforge:${ponder_version}+mc${minecraft_version}")
+        compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}")
+        runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}")
+        implementation("com.tterrag.registrate:Registrate:${registrate_version}")
+    }
+}
