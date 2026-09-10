@@ -1,5 +1,7 @@
 # Codex 接手说明
 
+> 构建状态更新：提交 `e05f0c7` 已通过 GitHub Actions 的 `bash gradlew build`。这不代表游戏内玩法或 Create 联动已通过验证。详见 [BUILD_STATUS.md](BUILD_STATUS.md)。
+
 仓库：aihaibara0816/Haibara-s-Traverse。此任务已授权公开上传源码。
 本包是工程骨架，尚不能在游戏中完成测绘。已有6个注册占位物品、纯Java区域/地形/备注/快照、扩展接口。
 先看 README、docs/DESIGN、docs/VALIDATION。玩法无需重新讨论，按已确认规则推进。
@@ -13,6 +15,6 @@
 
 AI/路径规划/Create蓝图目前仅保留接口，首版不加入完整AI推理。
 平板/对讲机/工程台整合是下一里程碑，详见设计文档。
-当前云环境Gradle下载曾失败，未完成编译；不要把源码包称为可玩JAR。
+早期本地环境的 Gradle 下载失败已由后续 CI 构建成功补充；仍未完成游戏内验证，不要把源码包称为可玩发布版。
 
-新增 SurveySelection 纯Java状态逻辑，可由服务端物品交互调用；已写入 CoreChecks，仍需运行验证。
+新增 SurveySelection 纯Java状态逻辑，可由服务端物品交互调用；已写入 CoreChecks，并纳入 Gradle check/build；后续修改仍应重新验证。

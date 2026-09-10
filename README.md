@@ -1,5 +1,7 @@
 # Haibara’s Measurement / 海扒拉的测绘
 
+> 构建状态更新：提交 `e05f0c7` 已通过 GitHub Actions 的 `bash gradlew build`。这不代表游戏内玩法或 Create 联动已通过验证。详见 [BUILD_STATUS.md](BUILD_STATUS.md)。
+
 0.1.0-alpha.1 工程起步包。不是完整可玩版本，不是已验证可安装的模组发布版。
 
 ## 当前代码
